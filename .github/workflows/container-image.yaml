@@ -37,7 +37,7 @@ jobs:
     - name: Push to Dockerhub registry
       run: |
         BRANCH=$(echo $GITHUB_REF | cut -d'/' -f3)
-        REPO=amazon/aws-ebs-csi-driver
+        REPO=kcking/aws-ebs-csi-driver
         if [ "$BRANCH" = "master" ]; then
           TAG="latest"
         else
